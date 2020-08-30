@@ -10,7 +10,8 @@ package ch7_20200830.inner;
  * @author xvpow
  */
 public class Ch7_8 {
-
+      private int data = 78;
+      private static int staticData = 95;
     class TestInnerClass{
 	private int value;
 	public void setValue(int value){
@@ -18,6 +19,10 @@ public class Ch7_8 {
 	}
 	public int getValue(){
 	    return value;
+	}
+	
+	public String toString(){
+	    return value+":"+data+":"+staticData;
 	}
     }
     //用在非靜態方法中!!
