@@ -21,7 +21,7 @@ public class Ch7_8 {
     .....
 }
 ```
-## 非靜態內部類在一般方法中使用，根與用一般類別無異EX
+## 非靜態內部類在一般方法中使用，與用一般類別無非別如下案例:
 ```java
   public void testClass(){
 	TestInnerClass tc = new TestInnerClass();
@@ -30,7 +30,7 @@ public class Ch7_8 {
     }
 
 ```
-## 再進靜態方中記得需先new起外部類才能使用如下
+## 再進靜態方中記得需先new起外部類才能使用如下案例:
 ```java
 public static void main(String[] args) {
 Ch7_8.TestInnerClass ct = new Ch7_8().new TestInnerClass();
