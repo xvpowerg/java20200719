@@ -13,7 +13,8 @@ public class Ch7_5 {
 	}	
     }
     public static void main(String[] args) {
-	// TODO code application logic here
+	 ItemList its = new ItemList();	
+	 foreach(its,System.out::println);
     }
     
 }
