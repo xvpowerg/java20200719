@@ -13,3 +13,11 @@ interface MyIterator{
 }
 
 ```
+stztic方法通常用於不需要呼叫介面抽象方法的工具函數，如以下案例產生一組新的MyIterator 物件
+```java
+
+  static MyIterator createMyIterator(String ... values){
+	MyIterator myit = new MyIteratorObj(values);
+	return myit;
+    }
+```
