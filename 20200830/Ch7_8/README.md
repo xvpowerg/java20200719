@@ -30,7 +30,7 @@ public class Ch7_8 {
     }
 
 ```
-## 再進靜態方中記得需先new起外部類才能使用如下案例:
+## 於靜態方中呼叫非靜態內部類請先new起外部類，才能使用如下案例:
 ```java
 public static void main(String[] args) {
 Ch7_8.TestInnerClass ct = new Ch7_8().new TestInnerClass();
