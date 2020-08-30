@@ -8,3 +8,4 @@
 1. Ch7_1 作業使用Supplier 產生樂透數字
 2. Ch7_2 練習使用Function分割字串並轉為大寫
 3. Ch7_3  練習使用UnaryOperator對陣列做乘2的動作
+4. Ch7_4  練習使用Predicate 只顯示長度大於3的字串 
