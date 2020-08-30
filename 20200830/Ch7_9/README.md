@@ -18,3 +18,20 @@ public class Dog {
 	 }
 	};
 ```
+## 匿名內部類實作介面範例
+
+```java
+    static void printArrays(Consumer<Integer> c,int ... array){
+	for (int v : array){
+	    c.accept(v);
+	}
+    }
+
+//匿名內部類實作介面
+	printArrays(new Consumer<Integer>(){
+	  public void accept(Integer v){
+	      System.out.print(v+" ");
+	  }
+	},6,8,9,10);
+```
+
