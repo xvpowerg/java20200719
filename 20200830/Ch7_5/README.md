@@ -6,9 +6,9 @@ interface MyIterator{
 
 //預設為public
    default void foreach(Consumer<String> consumer){	
-    while(hasNext()){
-        consumer.accept(next());
-    }	
+       while(hasNext()){
+           consumer.accept(next());
+       }	
     }
 }
 
