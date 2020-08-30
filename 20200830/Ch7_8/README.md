@@ -38,5 +38,30 @@ Ch7_8.TestInnerClass ct = new Ch7_8().new TestInnerClass();
 	System.out.println(ct);
 
 }
+```
+## 如果內部類與外部類方法名稱一樣，若要呼叫外部類方法請用`外部類名.this.方法`
+```java
+public class Ch7_8 {
+      public String getMsg(){
+	  return "Ch7_8";
+      }
+    class TestInnerClass{
+         public String getMsg(){
+	  return "TestInnerClass";
+         }
+	 public void printMsg(){
+	     //會呼叫到內部類的方法
+	     System.out.println(getMsg());
+	     //指定要呼叫外部類的方法
+	     //Ch7_8.this 表示外部類的物件
+	     System.out.println(Ch7_8.this.getMsg());
+	 }
+    }
+    public static void main(String[] args) {
+	Ch7_8.TestInnerClass ct = new Ch7_8().new TestInnerClass();
+	ct.printMsg();
+    }
+    
+}
 
 ```
