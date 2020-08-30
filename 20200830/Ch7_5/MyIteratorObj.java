@@ -6,13 +6,18 @@
 package ch7_20200830;
 
 public class MyIteratorObj implements MyIterator {
+    private String[] arrays;
+    private int index = 0;
+    public MyIteratorObj(String[] arrays){
+	this.arrays = arrays;
+    }
     public int size(){
-	return 0;
+	return arrays.length;
     }
     public boolean hasNext(){
-	return false;
+	return index < size();
     }
     public String next(){
-	return null;
+	return arrays[index++];
     }
 }

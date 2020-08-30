@@ -5,6 +5,8 @@
  */
 package ch7_20200830;
 
+import java.util.function.Consumer;
+
 /**
  *
  * @author xvpow
@@ -15,5 +17,15 @@ public interface MyIterator {
     boolean hasNext();
     //取的下一筆資料
     String next();
+    //預設為public
+    default void foreach(Consumer<String> consumer){	
+	while(hasNext()){
+	    consumer.accept(next());
+	}	
+    }
     
+    static MyIterator createMyIterator(String ... values){
+	MyIterator myit = new MyIteratorObj(values);
+	return myit;
+    }
 }
