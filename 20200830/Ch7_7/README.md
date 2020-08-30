@@ -13,6 +13,8 @@
 注意`靜態內部類不可讀取外部非靜態屬性`
 靜態內部類ex:
 ```java
+public class Ch7_7 {
+......
     private static class MyCondition implements Predicate<Integer>{
 	int condition;
 	 MyCondition(int condition){
@@ -22,6 +24,8 @@
 	    return v > condition;
 	}
     }
+ .....  
+}    
 ```
 ### 非靜態內部類
 
