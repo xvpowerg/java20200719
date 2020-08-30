@@ -29,7 +29,12 @@ public class Ch7_8 {
     }
     public static void main(String[] args) {
 	// TODO code application logic here
+	Ch7_8 ch78 = new Ch7_8();
+	ch78.testClass();
 	
+	Ch7_8.TestInnerClass ct = new Ch7_8().new TestInnerClass();
+	ct .setValue(200);
+	System.out.println(ct);
     }
     
 }
