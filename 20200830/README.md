@@ -13,3 +13,4 @@
 6. Ch7_6 實驗如果實作的介面當中 default方法有重複名稱會產生錯誤
 7. Ch7_7 static內部類 static Inner class
 8. Ch7_8 非static內部類 non static Inner class
+9. Ch7_9 匿名內部類
