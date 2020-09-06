@@ -1,5 +1,5 @@
 # lambda 與 method reference 練習
-1. 使用lambda 語法 實作Predicate，條件只顯示偶數，如果沒有任何偶數顯示無偶數
+1. 使用lambda 語法 實作Predicate，條件只顯示偶數，如果沒有任何偶數```顯示無偶數```
  方法約如下 
  ```java
  void test1(Predicate p,int ... v){
