@@ -13,18 +13,18 @@
  }
  ````
 3. 使用 method reference new語法 產生一組Student 
-## 建構式如下
+#### 建構式如下
 ```java
 Student(String name,float height){ 
 }
 ```
-## 可能會有一個類似的介面
+#### 可能會有一個類似的介面
 ```java
  interface ToStudent{
     xxxx  toStudent(....);
  }
 ````
-## 呼叫產生Student的方法
+#### 呼叫產生Student的方法
 ```java
 static void generateStudent(ToStudent tos,float height ....)(
   Student st =   tos.toStudent()
