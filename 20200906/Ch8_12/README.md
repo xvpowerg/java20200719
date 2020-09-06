@@ -4,10 +4,14 @@
  ```java
  void test1(Predicate p,int ... v){
  }
- 
  ````
 2. 使用method reference 語法 將字串陣列的內容轉為大寫
-方法約如下 void arrayToUp(UnaryOperator p,String ... v)
+ 方法約如下 
+ ```java
+ void arrayToUp(UnaryOperator p,String ... v){
+ 
+ }
+ ````
 3. 使用 method reference new語法 產生一組Student
 Student 建構式如下
 ```java
