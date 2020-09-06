@@ -1,4 +1,4 @@
-# method reference
+# Method Reference
 ```主要用途當lambda過於複雜時，可使用method reference取代lambda 使得程式閱讀性提升```
 ## 實作步驟
 1. 觀察 Function Interface參數類型與數量
