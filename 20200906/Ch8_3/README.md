@@ -25,7 +25,7 @@ public interface CopyFile {
 	       System.out.println("C1:"+a[0]);
 	   };	   
 ```
-###簡寫1
+### 簡寫1
 ```大括號內只有一條命令，所以可以使用以下方式簡寫可把{}移除 也要注意{}內部命令;記得要移除```
 ``` java
  int[] data = {56,30,92};
