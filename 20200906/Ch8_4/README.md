@@ -1,5 +1,11 @@
 # 使用lambda語法變形
 ## Function Interface 的方法參數有兩組且無回傳值
+`介面內容
+```java
+    interface IntegerCompare{
+	void compare(int a,int b);
+    }
+```
 ### 標準寫法
 ```java
  IntegerCompare ic1 = (int a,int b)->{
