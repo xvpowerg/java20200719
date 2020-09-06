@@ -1,27 +1,44 @@
-# method reference
-```主要用途當lambda過於複雜時，可使用method reference取代lambda```
+# 使用new 的method  reference　多筆參數
 ## 實作步驟
-1. 觀察 Function Interface參數類型與數量
-2. 觀察 Function Interface回傳的類型
-3. 依照1步驟與2步驟寫一個參數類型與數量、回傳類型都一樣的方法
-4. 使用第3步驟產生的方法 撰寫method reference
-5. 如果是靜態的method reference使用方式 類別名稱::方名稱
-6. 如果是非靜態的的method reference使用方式 物件::方名稱
-7. 如果是建構式 物件::new
-## Consumer介面內容
+1. 觀察 Function Interface 參數類型與數量
+2. 觀察 Function Interface 必須有回傳 與回傳值類型
+3. 由第1步驟 與 第2步驟 撰寫或是查看 是否有相同的建構子
+4. 第1步驟影響 呼叫哪一組建構子，會依照參數的數量與類型去呼叫相對應的建構子，如無對應會出錯
+5. 第2步驟影響 method  reference呼叫的類別
+6. 注意　Function Interface 方法的參數的順序 必須與建構子相同
+## ToMyPair介面內容
 ```java
-@FunctionalInterface
-public interface Consumer<T> {
-void accept(T t);
+   interface ToMyPair{
+       MyPair toMyPair(int k,String v);
+   }
+```
+## MyPair class 內容
+``` 注意在此MyPair 建構子有兩個參數順序是 int String 與  ToMyPair介面的方法一致
+```java
+public class MyPair {
+    private int key;
+    private String value;
+      public MyPair(){
+	
+    }
+    public MyPair(int k,String v){
+	this.key = k;
+	this.value = v;
+    }
+    
+    public String toString(){
+	return key+":"+value;
+    }
 }
 ```
-## 靜態的method reference使用方式
+## 使用new 的method  reference
 ```java
-   static void testMethod(Integer v){
-	  System.out.println("Consumer 1:"+v);
-      }
-          public static void main(String[] args) {
-	Consumer<Integer> c1 = Ch8_8::testMethod;
-	c1.accept(10);
+  static void test(ToMyPair tp){
+       MyPair myPair =  
+	       tp.toMyPair(10, "Test New");
+       System.out.println(myPair);
+   }
+    public static void main(String[] args) {
+	test(MyPair::new);
     }
 ```
