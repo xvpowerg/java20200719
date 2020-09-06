@@ -8,6 +8,7 @@
 5. 如果是靜態的method reference使用方式 類別名稱::方名稱
 6. 如果是非靜態的的method reference使用方式 物件::方名稱
 7. 如果是建構式 物件::new
+8. 如果有多個參數 須注意Function Interface參數的順序 必須與 method reference方法順序一致
 ## Consumer介面內容
 ```java
 @FunctionalInterface
