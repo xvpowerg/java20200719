@@ -8,3 +8,4 @@
 - [Ch8_7 Lambda 與 匿名類 區域變數的使用](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_7)
 - [Ch8_8 Method Reference](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_8)
 - [Ch8_9 非靜態的的method reference使用方式](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_9)
+- [使用new 的method reference] (https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_10)
