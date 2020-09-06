@@ -35,11 +35,17 @@ public class Ch8_5 {
 	//簡寫3  注意要移除return
 	MapToValue mp4 = str-> str.hashCode();
 
-	
 	//Function Interface 的方法參數有兩組且有回傳值
-	//以上簡寫條件跟無回傳值一樣
-	
-	
+	//標準
+	Calculate c1 = (int x,int y)->{
+	    return x + y;
+	};
+	//簡寫1  注意要移除return
+	Calculate c2 = (int x,int y)->x + y;
+	//簡寫2  
+	Calculate c3 = ( x, y)->{return x + y;};
+	//簡寫3 
+	Calculate c4 = (x, y)-> x + y;
     }
     
 }
