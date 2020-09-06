@@ -1,10 +1,10 @@
 # 20200906 Java
 - [Ch8_1說明 匿名內部類(Anonymous)的缺點](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_1)
-- Ch8_２使用lambda好處
-- Ch8_3 Function Interface 的方法參數只有一組且無回傳值
-- Ch8_4 Function Interface 的方法參數有兩組且無回傳值
-- Ch8_5 Function Interface 的方法參數有一組且有回傳值 與  方法參數有兩組且有回傳值
-- Ch8_6 Function Interface的方法無參數且有回傳值 與 方法無參數且無回傳值
-- Ch8_7 Lambda 與 匿名類 區域變數的使用
-- Ch8_8 Method Reference
-- Ch8_9 非靜態的的method reference使用方式
+- [Ch8_2使用lambda好處](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_2)
+- [Ch8_3 Function Interface 的方法參數只有一組且無回傳值](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_3)
+- [Ch8_4 Function Interface 的方法參數有兩組且無回傳值](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_4)
+- [Ch8_5 Function Interface 的方法參數有一組且有回傳值 與  方法參數有兩組且有回傳值](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_5)
+- [Ch8_6 Function Interface的方法無參數且有回傳值 與 方法無參數且無回傳值](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_6)
+- [Ch8_7 Lambda 與 匿名類 區域變數的使用](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_7)
+- [Ch8_8 Method Reference](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_8)
+- [Ch8_9 非靜態的的method reference使用方式](https://github.com/xvpowerg/java20200719/tree/master/20200906/Ch8_9)
