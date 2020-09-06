@@ -25,7 +25,12 @@ public class Ch8_3 {
 	       System.out.println("C1:"+a[0]);
 	   };	   
 	   testCopy(data,c1);
-	   //簡寫1
+	   //簡寫1 大括號內只有一條命令，所以可以使用以下方式簡寫
+	   //可把{}移除 也要注意{}內部命令;記得要移除
+	   //; 表達的是一段命令結束
+	     CopyFile c2 = (int[] a)->       
+	       System.out.println("C2:"+a[0]);
+	    testCopy(data,(int[] a)->System.out.println("C2:"+a[0]));
 	   //簡寫2
 	   //簡寫3
 	   
