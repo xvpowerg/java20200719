@@ -1,4 +1,4 @@
-# method reference
+# 非靜態的的method reference使用方式
 ```主要用途當lambda過於複雜時，可使用method reference取代lambda```
 ## 實作步驟
 1. 觀察 Function Interface參數類型與數量
@@ -11,17 +11,26 @@
 ## Consumer介面內容
 ```java
 @FunctionalInterface
-public interface Consumer<T> {
-void accept(T t);
+public interface Function<T, R> {
+    R apply(T t);
 }
 ```
-## 靜態的method reference使用方式
+### StringToCharArray類別內容
 ```java
-   static void testMethod(Integer v){
-	  System.out.println("Consumer 1:"+v);
-      }
-          public static void main(String[] args) {
-	Consumer<Integer> c1 = Ch8_8::testMethod;
-	c1.accept(10);
+  public class StringToCharArray {
+    public char[] strToCharArray(String str){
+	return str.toCharArray();
+    }
+}
+```
+### Ch8_9類別內容
+```java
+    public static void main(String[] args) {
+	//使用物件的method 產生method  reference
+	StringToCharArray stc = new StringToCharArray();
+	Function<String,char[]> f = stc::strToCharArray;
+	char[] cArray = f.apply("Apple");
+	System.out.println(cArray[0]);
+	System.out.println(cArray[1]);
     }
 ```
