@@ -8,7 +8,7 @@
 2. 使用method reference 語法 將字串陣列的內容轉為大寫
  方法約如下 
  ```java
- void arrayToUp(UnaryOperator p,String ... v){
+ String[] arrayToUp(UnaryOperator p,String ... v){
  
  }
  ````
