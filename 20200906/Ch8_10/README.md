@@ -3,8 +3,8 @@
 1. 觀察 Function Interface 參數類型與數量
 2. 觀察 Function Interface 必須有回傳 與回傳值類型
 3. 由第1步驟 與 第2步驟 撰寫或是查看 是否有相同的建構子
-4.第1步驟影響 會依照參數數量與類型呼叫相對應的建構子 
-5.第2步驟影響 method  reference呼叫的類別
+4. 第1步驟影響 會依照參數數量與類型呼叫相對應的建構子 
+5. 第2步驟影響 method  reference呼叫的類別
 ## Supplier介面內容
 ```java
 @FunctionalInterface
