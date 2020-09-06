@@ -1,8 +1,4 @@
-# 說明 Functional interface 和  lambda 語法  
-
-## Functional interface
-在介面當中抽象的方法只有一個
-
-## lambda 語法
-lambda 語法只能用於 Functional interface
-
+# 說明 匿名內部類(Anonymous)的缺點
+1. 程式碼過於複雜
+2. 會產生新的class
+`該如何處裡麻煩的匿名內部類呢? 可使用lambda`
