@@ -12,10 +12,9 @@
  
  }
  ````
-3. 使用 method reference new語法 產生一組Student
-Student 建構式如下
+3. 使用 method reference new語法 產生一組Student 建構式如下
 ```java
-Student(String s,float height){
+Student(String name,float height){
  
 }
 ```
