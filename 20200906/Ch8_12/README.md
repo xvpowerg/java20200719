@@ -28,7 +28,7 @@ Student(String name,float height){
 ```java
 static void generateStudent(ToStudent tos,float height ....)(
   Student st =   tos.toStudent()
-  System.out.println(st)
+  System.out.println(st)//可印出Student的內容
 }
 
 ```
