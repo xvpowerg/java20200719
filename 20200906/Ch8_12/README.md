@@ -21,12 +21,12 @@ Student(String name,float height){
 ## 可能會有一個類似的介面
 ```java
  interface ToStudent{
-    xxxx  toStudent();
+    xxxx  toStudent(....);
  }
 ````
 ## 呼叫產生Student的方法
 ```java
-static void generateStudent(ToStudent tos,float height)(
+static void generateStudent(ToStudent tos,float height ....)(
   Student st =   tos.toStudent()
   System.out.println(st)
 }
