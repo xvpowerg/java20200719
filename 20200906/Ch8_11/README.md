@@ -1,4 +1,4 @@
-# 使用new 的method  reference　多筆參數
+# 使用new的method reference(多筆參數)
 ## 實作步驟
 1. 觀察 Function Interface 參數類型與數量
 2. 觀察 Function Interface 必須有回傳 與回傳值類型
