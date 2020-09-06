@@ -23,14 +23,19 @@ public class Ch8_7 {
 	System.out.println(names);//Ken Vivin 
 	
 	StringBuffer sb = new StringBuffer();
-	Consumer<String> c2 = new Consumer<String>(){
-	    public void accept(String str){
-		   sb.append(str);
-		   sb.append(" ");
-	    }
-	};
-	c2.accept("Ken");
-	c2.accept("Vivin");	
+//	Consumer<String> c2 = new Consumer<String>(){
+//	    public void accept(String str){
+//		   sb.append(str);
+//		   sb.append(" ");
+//	    }
+//	};
+//	c2.accept("Ken");
+//	c2.accept("Vivin");	
+//	System.out.println(sb);//Ken Vivin 
+	
+	Consumer<String> c3 = sv-> sb.append(sv).append(" ");
+	c3.accept("A");
+	c3.accept("B");
 	System.out.println(sb);//Ken Vivin 
     }
     
