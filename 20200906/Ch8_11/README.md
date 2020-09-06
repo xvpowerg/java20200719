@@ -13,7 +13,7 @@
    }
 ```
 ## MyPair class 內容
-``` 注意在此MyPair 建構子有兩個參數順序是 int String 與  ToMyPair介面的方法一致
+``` 注意在此MyPair 建構子有兩個參數順序是 int String 與  ToMyPair介面的方法一致```
 ```java
 public class MyPair {
     private int key;
