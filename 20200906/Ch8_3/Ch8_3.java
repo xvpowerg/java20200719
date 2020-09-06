@@ -32,8 +32,12 @@ public class Ch8_3 {
 	       System.out.println("C2:"+a[0]);
 	    testCopy(data,(int[] a)->System.out.println("C2:"+a[0]));
 	   //簡寫2
-	   //簡寫3
-	   
+	    // 因為方法傳遞的參數只有一組,所以可使用 移除()與變數類型 方式簡寫
+	       CopyFile c3 = a->{
+		    System.out.println("C3:"+a[0]); 
+		 };       	     
+	   //簡寫3 由簡寫2與簡寫1規則合併
+	     CopyFile c4 = a->System.out.println("C3:"+a[0]); 
 	
 	//Function Interface 的方法參數只有兩組且無回傳值
 	
