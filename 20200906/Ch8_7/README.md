@@ -1,5 +1,5 @@
 # Lambda 與 匿名類 區域變數的使用
-## 匿名類或lambda 使用區域變數時 只可唯讀
+```匿名類或lambda 使用區域變數時 只可唯讀```
 ### 以下程式碼在accept內會產生錯誤
 ```java
       	String names = new String();
