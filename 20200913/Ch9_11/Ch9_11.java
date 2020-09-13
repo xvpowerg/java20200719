@@ -5,19 +5,16 @@
  */
 package ch9_20200913;
 
-import java.util.TreeSet;
 import java.util.Comparator;
+import java.util.TreeSet;
+
 /**
  *
  * @author xvpow
  */
-public class Ch9_10 {
+public class Ch9_11 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-	// TODO code application logic here
+    public static void main(String[] args) {	
 	Product p1 = new Product("A1",100,2);
 	Product p2 = new Product("A2",50,2);
 	Product p3 = new Product("A3",61,2);
@@ -25,14 +22,13 @@ public class Ch9_10 {
 	Product p5 = new Product("A1",60,2);
 	Product p6 = new Product("A4",57,3);
 	Product p7 = new Product("A4",57,3);
-	Comparator<Product> cp = (cp1,cp2)->{
-	    int cmp = cp1.getName().compareTo(cp2.getName());
-	  if (cmp != 0) return cmp;
-	   cmp = cp1.getPrice() - cp2.getPrice();
-	  if (cmp == 0) cmp = cp1.getLocation() - cp2.getLocation();
-	    return cmp;
-	};
-	
+	//comparing 回傳要排序的物件
+	//thenComparing 回傳要排序的物件
+	// reversed()由大到小 遞減排序
+	Comparator<Product> cp =
+		Comparator.<Product,String>comparing(p->p.getName()).
+			thenComparing(p->p.getPrice()).
+			thenComparing(p->p.getLocation()).reversed();	
 	TreeSet<Product> set = new TreeSet<>(cp);
 	set.add(p1);
 	set.add(p2);
@@ -42,6 +38,7 @@ public class Ch9_10 {
 	set.add(p6);
 	set.add(p7);
 	set.forEach(System.out::println);
+	
     }
     
 }
