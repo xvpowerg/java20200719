@@ -39,3 +39,16 @@ index =  nList.indexOf(986);
 nList.remove(Integer.valueOf(256));
 printList(nList);
 ```
++ removeAll 批次移除 以下案例將nList 的13與650的數字移除
+```java
+ List<Integer> deList = new  ArrayList<>();
+deList.add(13);
+deList.add(650);
+nList.removeAll(deList);
+ printList(nList);
+```
++ removeIf 符合條件移除 只要資料小於50的移除
+```java
+nList.removeIf(v->v<50);
+printList(nList);
+```
