@@ -11,10 +11,23 @@ public class Ch9_9 {
 	   //如果p1 大於 p2 回傳正數
 	   //如果p1 小於 p2 回傳負數
 	   //如果p1 等於 p2 回傳0
+	   //先排姓名 金額 地區
 	    public int compare(Product p1,Product p2){
 		 int cmp = p1.getName().compareTo(p2.getName());
-		  return cmp;
-	     }
+		   if (cmp != 0) return cmp;
+		   
+		   if(p1.getPrice() > p2.getPrice()){
+		       return 1;
+		   }else if(p1.getPrice() < p2.getPrice()){
+		        return -1;
+		   }else if(p1.getLocation() > p2.getLocation()){
+		       return 1;
+		   }else if(p1.getLocation() < p2.getLocation()){
+		        return -1;
+		   }
+		   
+		 return 0;
+	     }	   
 	}
     public static void main(String[] args) {
 	// TODO code application logic here
@@ -24,6 +37,7 @@ public class Ch9_9 {
 	Product p4 = new Product("A2",50,1);
 	Product p5 = new Product("A1",60,2);
 	Product p6 = new Product("A4",57,3);
+	Product p7 = new Product("A4",57,3);
 	MyComparator mcp = new MyComparator();
 	TreeSet<Product> set = new TreeSet<>(mcp);
 	set.add(p1);
@@ -32,6 +46,7 @@ public class Ch9_9 {
 	set.add(p4);
 	set.add(p5);
 	set.add(p6);
+	set.add(p7);
 	set.forEach(System.out::println);
     }
     
