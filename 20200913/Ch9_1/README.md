@@ -32,3 +32,14 @@ Fruit APPLE = new Fruit("APPLE",0);
 Fruit KIWI = new Fruit("KIWI",1);
 Fruit CHERRY = new Fruit("CHERRY",2);
 ```
+# Enum常用方法
++ name()可取得建立物件時的name
+```java
+System.out.println("APPLE name:"+Fruit.APPLE.name()); //輸出APPLE
+```
++ ordinal()可取得建立物件時的ordinal
++ ordinal的順序依照宣告時的順序 由0開始往下遞增
+```java
+System.out.println("APPLE ordinal:"+Fruit.APPLE.ordinal()); //輸出0
+System.out.println("CHERRY ordinal:"+Fruit.CHERRY.ordinal()); //輸出2
+```
