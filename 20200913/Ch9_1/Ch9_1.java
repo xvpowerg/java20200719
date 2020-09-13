@@ -40,6 +40,15 @@ public class Ch9_1 {
 		System.out.println("CHERRY");
 		break;
 	}
+	
+	//Enum常用方法
+	//name()可取得建立物件時的name
+	System.out.println("APPLE name:"+Fruit.APPLE.name());
+	//ordinal()可取得建立物件時的ordinal
+	//ordinal的順序依照宣告時的順序 由0開始往下遞增
+	System.out.println("APPLE ordinal:"+Fruit.APPLE.ordinal());
+	System.out.println("CHERRY ordinal:"+Fruit.CHERRY.ordinal());
+	
     }
     
 }
