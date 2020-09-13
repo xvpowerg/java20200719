@@ -28,6 +28,9 @@ public class Student {
        return this.name+":"+this.age;
    }
    
+   public int hashCode(){
+       return name.hashCode() + age;
+   }
    public boolean equals(Object obj){
        Student tmpSt = (Student)obj;
        return tmpSt.name.equals(this.name) && tmpSt.age == this.age;
