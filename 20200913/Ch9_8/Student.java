@@ -21,13 +21,15 @@ public class Student implements Comparable<Student>{
    //如果目前數值大於傳入的數值回傳正數
    //如果目前數值小於傳入的數值回傳負數
    //如果目前數值等於傳入的數值回傳0
+   
+   //比完年齡 比姓名
    public int compareTo(Student st){
        if (age > st.getAge()){
 	   return 1;
        }else if(age < st.getAge()){
 	   return -1;
-       }
-       return 0;
+       }       
+       return name.compareTo(st.getName());
    }
    public String getName(){
        return this.name;
