@@ -5,7 +5,7 @@
 + Set
 + Map
 ## 先說明List
-`List 很像陣列 只是他不需要給予長度`案例:
+** List 很像陣列 只是他不需要給予長度 **案例:
 ```java
 List myList = new ArrayList();
 	//add()新增內容到list
