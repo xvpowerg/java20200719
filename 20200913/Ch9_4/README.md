@@ -17,3 +17,17 @@ List內有資料如下
 	    nList.addAll(nList2);
 	     printList(nList);輸出 100 52 68 13 25 650 256 956 
 ```
++ contains 是否有相對應的元素存在於List
+```java
+boolean find =  nList.contains(68);
+System.out.println(find);//因為有68元素所以回傳true
+find = nList.contains(756);
+System.out.println(find); //因為沒有756元素所以回傳false
+```
++ indexOf 會找到元素index如元素不存在回傳-1
+```java
+int index =  nList.indexOf(13);
+System.out.println(index); //3 因為13的索引是3
+index =  nList.indexOf(986);
+ System.out.println(index); //-1 因為找不到986
+```
