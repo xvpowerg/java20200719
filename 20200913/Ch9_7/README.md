@@ -9,5 +9,5 @@
   + hashCode 如果數字一樣
   + equals 看是否一樣
   ---------------------------
-`因為hashCode 回傳的是整數比對效率比起equals高`
+`因為hashCode回傳的是整數,等於比較效率比equals高`
 
