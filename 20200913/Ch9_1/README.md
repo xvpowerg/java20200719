@@ -29,6 +29,6 @@
 + APPLE KIWI CHERRY都是屬於 Fruit這個類別所建立的物件,只是他們的name 與 ordinal是不一樣虛擬碼如下:
 ```java
 Fruit APPLE = new Fruit("APPLE",0);
-	Fruit KIWI = new Fruit("KIWI",1);
-	Fruit CHERRY = new Fruit("CHERRY",2);
+Fruit KIWI = new Fruit("KIWI",1);
+Fruit CHERRY = new Fruit("CHERRY",2);
 ```
