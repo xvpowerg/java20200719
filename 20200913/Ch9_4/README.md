@@ -31,3 +31,11 @@ System.out.println(index); //3 因為13的索引是3
 index =  nList.indexOf(986);
  System.out.println(index); //-1 因為找不到986
 ```
++ remove 有兩個方法 一個是傳整數 一個是傳物件
+  + 傳整數 參數是index
+  + 傳物件 參數是List的內容
+```java
+//nList.remove(256);//因為index沒有到256 會拋出錯誤
+nList.remove(Integer.valueOf(256));
+printList(nList);
+```
