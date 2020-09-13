@@ -52,3 +52,9 @@ nList.removeAll(deList);
 nList.removeIf(v->v<50);
 printList(nList);
 ```
++ replaceAll 對list的所有元素做運算
+```java
+nList.replaceAll(v->v+2);//對List的所有元素+
+printList(nList);
+```	       
+
