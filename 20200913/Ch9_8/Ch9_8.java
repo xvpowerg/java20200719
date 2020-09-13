@@ -21,11 +21,13 @@ public class Ch9_8 {
 	Student st2 = new Student("Vivin",70);
 	Student st3 = new Student("Lindy",84);
 	Student st4 = new Student("Vivin",70);
+	Student st5 = new Student("Join",20);
 	TreeSet<Student> stSte = new TreeSet<>();
 	stSte.add(st1);
 	stSte.add(st2);
 	stSte.add(st3);
 	stSte.add(st4);
+	stSte.add(st5);
 	stSte.forEach(System.out::println);
 	
     }
