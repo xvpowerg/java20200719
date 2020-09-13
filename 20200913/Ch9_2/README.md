@@ -16,3 +16,20 @@ List myList = new ArrayList();
 	//get(index)參數的index跟陣列一樣由0開始
 	System.out.println(myList.get(1));
 ```
+## List輪巡
++ 使用for loop 
+```java 
+for(int i =0; i<myList.size();i++){
+System.out.print(myList.get(i)+" ");
+}
+```
++ 使用foreach loop
+```java	
+for( Object v : myList){
+System.out.print(v+" ");
+}
+```
++ 使用foreach 方法
+```java
+myList.forEach(v->System.out.print(v+" "));
+```
