@@ -29,3 +29,10 @@ HashMap<Integer,String> map = new HashMap<>();
 	    System.out.println("存在Key");
 	}
 ```
+*java8開始提供 putIfAbsent 如果key不存在 就將value寫入map	
+如下
+```java
+	map.putIfAbsent(16, "Iris");//16key 不存在 所以寫入
+	map.putIfAbsent(20, "Gigi");//20 key存在 所以不寫入
+	System.out.println(map)//{16=Iris, 20=Join, 25=Howard, 10=Lucy, 13=Yumi}
+```
