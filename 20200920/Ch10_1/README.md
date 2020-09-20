@@ -36,3 +36,14 @@ HashMap<Integer,String> map = new HashMap<>();
 	map.putIfAbsent(20, "Gigi");//20 key存在 所以不寫入
 	System.out.println(map)//{16=Iris, 20=Join, 25=Howard, 10=Lucy, 13=Yumi}
 ```
+## 輪巡Map
+1. java8之前 可使用entrySet
+```java
+	   //使用entrySet 輪巡Map
+	Set<Entry<Integer,String>> entrySet = map.entrySet();
+	    for (Entry<Integer,String> entry :entrySet){
+		System.out.println(entry.getKey()+":"+entry.getValue());
+	    }     
+	  }
+```
+
