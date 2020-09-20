@@ -8,6 +8,7 @@ package ch9_20200913;
 import java.util.Comparator;
 import java.util.TreeSet;
 import java.util.Scanner;
+import java.util.Comparator;
 public class Ch9_12 {
 
     /**
@@ -24,9 +25,16 @@ public class Ch9_12 {
 	//作業..............
 	System.out.println("1 遞增排序");
 	System.out.println("2 遞減排序");
-	Scanner scan = new Scanner(System.in);
+	Scanner scan = new Scanner(System.in);	
 	int order = scan.nextInt();
-	TreeSet<Product> set = new TreeSet<>();
+	Comparator<Product> comp = 
+		Comparator.<Product,String>comparing(v->v.getName()).
+			thenComparing(v->v.getPrice()).
+			thenComparing(v->v.getLocation());
+	if (order == 2){
+	    comp = comp.reversed();
+	}
+	TreeSet<Product> set = new TreeSet<>(comp);
 	set.add(p1);
 	set.add(p2);
 	set.add(p3);
