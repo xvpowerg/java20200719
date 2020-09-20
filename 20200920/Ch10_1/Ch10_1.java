@@ -5,6 +5,8 @@
  */
 package ch10_20200920;
 import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
 public class Ch10_1 {
 
     public static void main(String[] args) {
@@ -33,6 +35,11 @@ public class Ch10_1 {
 	map.putIfAbsent(16, "Iris");
 	map.putIfAbsent(20, "Gigi");
 	System.out.println(map);	
-    }
+	   //使用entrySet 輪巡Map
+	Set<Entry<Integer,String>> entrySet = map.entrySet();
+	    for (Entry<Integer,String> entry :entrySet){
+		System.out.println(entry.getKey()+":"+entry.getValue());
+	    }     
+	  }
     
 }
