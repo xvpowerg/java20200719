@@ -30,8 +30,14 @@ public class Ch10_3 {
 	    System.out.println("compute Key不存在:"+v1+":"+v2);
 	    return "X5";}
 	);
-	System.out.println(hashMap);//{17=X5, 19=D4, 10=A1, 76=C3, 15=B2}
-	//hashMap.computeIfAbsent(Integer.SIZE, mappingFunction)
+	System.out.println(hashMap);//{17=X5, 19=D4, 10=A1, 76=C3, 15=B2}	
+	// computeIfAbsent 當Key不存在 會執行Function 
+	//會將Function的return 寫回Map
+	hashMap.computeIfAbsent(80, k->{
+	    System.out.println("computeIfAbsent K:"+k);
+	    return "Y6";
+	});
+	System.out.println(hashMap);//{80=Y6, 17=X5, 19=D4, 10=A1, 76=C3, 15=B2}	
 	//hashMap.computeIfPresent(Integer.SIZE, remappingFunction)
     }
     
