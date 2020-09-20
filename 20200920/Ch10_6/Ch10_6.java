@@ -37,10 +37,13 @@ public class Ch10_6 {
 	HashMap<Integer,List<String>> map = new HashMap<>();
 	for (Item it : list){
 	    List<String> itList = new ArrayList<>();
+	    if (map.containsKey(it.getPrice())){
+		itList = map.get(it.getPrice());
+	    }
 	    itList.add(it.getName());
 	    map.put(it.getPrice(), itList);
 	}
-	
+	    
 	System.out.println(map.get(30));
     }
     
