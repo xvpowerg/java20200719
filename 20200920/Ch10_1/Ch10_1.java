@@ -29,8 +29,10 @@ public class Ch10_1 {
 	}else{
 	    System.out.println("存在Key");
 	}
-	System.out.println(map);
-	
+	// java8開始提供 putIfAbsent 如果key不存在 就將value寫入map	
+	map.putIfAbsent(16, "Iris");
+	map.putIfAbsent(20, "Gigi");
+	System.out.println(map);	
     }
     
 }
