@@ -35,3 +35,13 @@ hashMap.computeIfAbsent(80, k->{
 	});
 	System.out.println(hashMap);//{80=Y6, 17=X5, 19=D4, 10=A1, 76=C3, 15=B2}	
 ```
+### computeIfPresent 當Key不存在 
+* 不會執行BiFunction 
+* 不會將BiFunction的return 寫回Map
+```java
+hashMap.computeIfPresent(Integer.SIZE, (k1,k2)->{
+	    System.out.println(k1+":"+k2);
+	    return "G7";
+	});
+	System.out.println(hashMap);//{80=Y6, 17=X5, 19=D4, 10=A1, 76=C3, 15=B2}
+```
