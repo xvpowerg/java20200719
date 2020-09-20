@@ -17,6 +17,20 @@ public class Ch10_1 {
 	map.put(20, "Join");
 	//取得map使用get
 	System.out.println(map.get(10));
+	//key如果重複會覆蓋value
+	map.put(10, "Lucy");
+	System.out.println(map.get(10));
+	//如果key不存在就put
+	//containsKey key存在回傳true 如果key不存在回傳flase
+	int key = 13;
+	if (!map.containsKey(key)){
+	    System.out.println("不存在Key");
+	    map.put(key, "Yumi");
+	}else{
+	    System.out.println("存在Key");
+	}
+	System.out.println(map);
+	
     }
     
 }
