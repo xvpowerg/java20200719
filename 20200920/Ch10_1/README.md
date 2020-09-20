@@ -1,11 +1,11 @@
 # Map<K,V>
 ## Map特性
-可把Map想像成一個經緯度與地址的關係 一個經緯度 為Kye 地址為 value
-* *以下所有的Key都簡寫K 所有value都簡寫v
-* Map的結構是Key 與 value的組合
+可把Map想像成一個經緯度與地址的關係 一個經緯度 為Kye 地址為 Value
+* *以下所有的Key都簡寫K 所有value都簡寫V
+* Map的結構是Key 與 Value的組合
 * 寫入map使用put(K,V)
-* 取得map使用get(k)
-* k如果重複會覆蓋v 如下
+* 取得map使用get(K)
+* K如果重複會覆蓋v 如下
 ```java
 HashMap<Integer,String> map = new HashMap<>();
 	//寫入map使用put
