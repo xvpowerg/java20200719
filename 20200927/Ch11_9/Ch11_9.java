@@ -21,12 +21,20 @@ public class Ch11_9 {
     }
     nameOption.ifPresent(System.out::println);      
     nameOption = Optional.ofNullable("Ken");//可放置null
-    //如果內容不存在我要回傳的預設值
+    //如果內容是null回傳預設值
     String value = nameOption.orElse("Empty");
     System.out.println(value);
     nameOption = Optional.ofNullable(null);//可放置null
     value = nameOption.orElse("Empty");
      System.out.println(value);
+     //比較複雜的情況
+   //如果Optional內容是null回傳Supplier的數值
+     value =  nameOption.orElseGet(()->"Supplier Empty");
+     System.out.println(value);
+      //如果Optional內容是null 就拋出自訂例外
+     nameOption.orElseThrow(()->new IllegalArgumentException("value is null"));
+     
+     
     }
     
 }
