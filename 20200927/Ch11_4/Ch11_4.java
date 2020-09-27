@@ -11,22 +11,32 @@ public class Ch11_4 {
 	    
 	 //Stream<String> str = Stream.of("Ken","Vivin","Lindy","Join");
 	 //str.forEach(System.out::println);
-	//Stream ¯S©Ê
-	//¤£¥i­«½Æ¨Ï¥Î
-	//Stream ¤èªk¤£·|­×§ï¨Ó·½
-	//Stream ¤À¬° Lazy»PTerminalÃş«¬
+	//Stream ç‰¹æ€§
+	//ä¸å¯é‡è¤‡ä½¿ç”¨
+	//Stream æ–¹æ³•ä¸æœƒä¿®æ”¹ä¾†æº
+	//Stream åˆ†ç‚º Lazyèˆ‡Terminalé¡å‹
 	
-	//¤£¥i­«½Æ¨Ï¥Î
+	//ä¸å¯é‡è¤‡ä½¿ç”¨
 	//str.forEach(System.out::println);
-	//¤£·|­×§ï¨Ó·½
+	//ä¸æœƒä¿®æ”¹ä¾†æº
 	 ArrayList<String> list = new ArrayList<>();
 	 list.add("Howard");
 	 list.add("Vivin");
 	 list.add("Lindy");
 	 list.add("Ken");
 	 list.add("Tom");
-	 list.stream().filter(v->v.length() >3).forEach(System.out::println);
-	 System.out.println(list.size());
+//	 list.stream().filter(v->v.length() >3).forEach(System.out::println);
+//	 System.out.println(list.size());
+	 // Lazy æ„æ€stream().æ–¹æ³• æ­¤æ™‚ä¸¦ä¸æœƒç«‹åˆ»å‘¼å«æ­¤æ–¹æ³• ç­‰åˆ°å‘¼å«Terminalæ–¹æ³•æ™‚æ‰æœƒå‘¼å«
+//	 list.stream().filter(v->{
+//	     System.out.println("filter:"+v);
+//	     return v.length() > 10;});
+//Terminal
+      long count  =  list.stream().filter(v->{
+	     System.out.println("filter:"+v);
+	     return v.length() > 3;}).count();
+      System.out.println("count:"+count);
+	 
     }
     
 }
