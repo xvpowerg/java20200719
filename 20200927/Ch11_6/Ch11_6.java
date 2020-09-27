@@ -24,10 +24,15 @@ public class Ch11_6 {
 	 list.add("Ken");
 	 list.add("Tom");
 	 
-	 Optional<String> anyOpt =  list.parallelStream().findAny();
-	 Optional<String> firstOpt =  list.stream().findFirst();
-	 System.out.println(anyOpt.get());
-	 System.out.println(firstOpt.get());
+//	 Optional<String> anyOpt =  list.parallelStream().findAny();
+//	 Optional<String> firstOpt =  list.stream().findFirst();
+//	 System.out.println(anyOpt.get());
+//	 System.out.println(firstOpt.get());
+	 
+	  list.stream().limit(3).forEach(System.out::println); //只取三個
+	  list.stream().skip(3).forEach(System.out::println); //跳過前三個
+	  list.stream().sorted().forEach(System.out::println); //排序
+	 
     }
     
 }
