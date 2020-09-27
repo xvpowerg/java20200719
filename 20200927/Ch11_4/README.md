@@ -24,3 +24,4 @@ str.forEach(System.out::println);
 	 //最後List 的size不變
 	 System.out.println(list.size());
 ```
+## Lazy與Terminal
