@@ -37,5 +37,10 @@ list.stream().peek(v->System.out.println("Peek:"+v)).allMatch(n->n.length() >2);
 ```java
 boolean b4 = list.stream().
 		peek(v->System.out.println(v)).noneMatch(n->n.length() > 10);
-	 System.out.println(b4); //
+	 System.out.println(b4); //true
+	 
+	boolean b5 = list.stream().
+		peek(v->System.out.println(v)).noneMatch(n->n.length() > 3);//短路
+	 System.out.println(b5); //	 
+	 
 ```
