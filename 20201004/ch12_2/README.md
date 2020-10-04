@@ -38,5 +38,6 @@ Integer ans = list.stream().reduce(12, (a,b)->{
 	System.out.println("CM-"+c+":"+f);//把Stream內容加總
 	return c +f;
     });
-```    
     System.out.println(ans2);
+```    
+
