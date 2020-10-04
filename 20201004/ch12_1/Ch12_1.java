@@ -6,15 +6,13 @@
 package ch12_20201004;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.stream.Collectors;
 /**
  *
  * @author xvpow
  */
 public class Ch12_1 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 	Student st1 = new Student("Ken",70);
 	Student st2 = new Student("Lindy",80);
@@ -29,8 +27,25 @@ public class Ch12_1 {
 	list.add(st4);
 	list.add(st5);
 	list.add(st6);
-	
-	
+	//可以把filter好的內容 轉換為某個集合
+//	list = list.stream().filter(st->st.getScore() < 90).
+//		    collect(Collectors.toList());
+//	System.out.println(list);
+
+//取得群組
+   Map<Integer,List<Student>> group =
+	   list.stream().collect(Collectors.groupingBy((st)->st.getScore()/10));
+      System.out.println(group);
+   System.out.println(group.get(7));
+   //Collectors.joining() 必須使用在stream內容都是字串
+   //希望輸出Name:Ken,Vivin,Lindy,Tom. 以上格式字串 可使用Collectors.joining(",","Name:",".")
+   String names =   list.stream().map(st->st.getName()).
+	     collect(Collectors.joining(",","Name:","."));
+   System.out.println(names);
+   //群組二分法 
+      Map<Boolean,List<Student>> group2 =  list.stream().
+	      collect(Collectors.partitioningBy(st->st.getScore() >80));
+   System.out.println(group2);
     }
     
 }
