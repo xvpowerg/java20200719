@@ -17,6 +17,7 @@ public class Ch12_3 {
     
     public static void main(String[] args) {
 	File file = new File("C:\\MyDir\\msg.txt");
+	File target = new File("C:\\MyDir\\msg_copy.txt");
 	//是否存在
 	System.out.println(file.exists());
 	//是否為目錄
@@ -24,12 +25,14 @@ public class Ch12_3 {
 	//是否為檔案
 	System.out.println(file.isFile());
 	try{
-	    InputStream in = new FileInputStream(file);
+	    InputStream in = new FileInputStream(file);	    
+	    OutputStream out = new FileOutputStream(target);
 	    //-1表示資料結尾
 	    int data = -1;
 	    
 	    while( (data = in.read()) !=-1  ){
-		System.out.println(data);
+		//System.out.println(data);
+		out.write(data);
 	    }
 	   
 	}catch(FileNotFoundException fex){
