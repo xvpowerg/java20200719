@@ -33,11 +33,24 @@ public class Ch12_7 {
 	Exception:java.lang.Exception: Body...ex
 	
 	*/
-	try(TestClose t1 = new TestClose("Test1",false);
-	TestClose t2 = new TestClose("Test2",false);){
+//	try(TestClose t1 = new TestClose("Test1",false);
+//	TestClose t2 = new TestClose("Test2",false);){
+//	    System.out.println("Body...");	
+//	   throw new Exception("Body...ex");
+//	}catch(Exception ex){
+//	    System.out.println("Exception:"+ex);	   
+//	}
+
+
+    try(TestClose t1 = new TestClose("Test1",true);
+	TestClose t2 = new TestClose("Test2",true);){
 	    System.out.println("Body...");	
 	   throw new Exception("Body...ex");
-	}catch(Exception ex){
+	}catch(Exception ex){//Exception 是最先拋出的例外 其他例外被放在Suppressed
+	      Throwable[] array =  ex.getSuppressed();
+	      for (Throwable th : array){
+		   System.out.println("Throwable:"+th);	   
+	      }
 	    System.out.println("Exception:"+ex);	   
 	}
 	
