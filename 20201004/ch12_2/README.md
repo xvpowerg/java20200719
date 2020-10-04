@@ -23,13 +23,14 @@ Integer ans = list.stream().reduce(12, (a,b)->{
 	    return a+b;
 	});
     System.out.println(ans);
-  ```java
+```
   
 + 可給予初始
    + 如果是parallel() 會先將12與stream內容相加，計算完成後 再將數值相加
    + 把Stream內容都加上12
     + 把Stream內容全部加總
     + 如果不是parallel只會呼叫BF　
+ ```java    
    Integer ans2 =  list.stream().reduce(12, (a,b)->{
 	    System.out.println("BF-"+a+":"+b);//把Stream內容都加上12
 	    return a+b;
@@ -37,5 +38,5 @@ Integer ans = list.stream().reduce(12, (a,b)->{
 	System.out.println("CM-"+c+":"+f);//把Stream內容加總
 	return c +f;
     });
-    
+```    
     System.out.println(ans2);
