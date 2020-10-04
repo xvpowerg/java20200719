@@ -10,6 +10,7 @@ import java.io.OutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 public class Ch12_3 {
     //InputStream
     //OutputStream
@@ -24,9 +25,17 @@ public class Ch12_3 {
 	System.out.println(file.isFile());
 	try{
 	    InputStream in = new FileInputStream(file);
+	    //-1表示資料結尾
+	    int data = -1;
 	    
+	    while( (data = in.read()) !=-1  ){
+		System.out.println(data);
+	    }
+	   
 	}catch(FileNotFoundException fex){
 	    System.out.println(fex);
+	}catch(IOException ex){
+	    System.out.println(ex);
 	}
 	
 	
