@@ -14,7 +14,7 @@ Calendar calendar = Calendar.getInstance();
 		year,month,date,hour,minute,second);
 
 ```
-# LocalDate java7取得年月日
+# LocalDate 取得年月日
 ```java
 LocalDate localDate = LocalDate.now();
  System.out.println(localDate.toString());
@@ -30,3 +30,17 @@ LocalDate localDate = LocalDate.now();
 	  System.out.println(localDate.getYear());
 
 ```
+# LocalTime 取得時間
+```java
+    LocalTime localTime = LocalTime.now();
+	    System.out.println(localTime.getHour());
+	    System.out.println(localTime.getMinute());
+	    System.out.println(localTime.getSecond());
+	    System.out.println(localTime);
+	    
+	    LocalTime time1120 = LocalTime.of(11,20);
+	    //目前的時間是參數時間之前嗎?
+	   System.out.println(localTime.isBefore(time1120));
+	    //目前的時間是參數時間之後嗎?
+	     System.out.println(localTime.isAfter(time1120));
+```   
