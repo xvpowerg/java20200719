@@ -54,6 +54,11 @@ public class Ch13_5 extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         jButton3.setText("Stop");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,10 +113,16 @@ public class Ch13_5 extends javax.swing.JFrame {
 	th1.start();
 	
     }                                        
-    boolean start = true;
+    boolean start = true;//執行序的內容是否運行
+    boolean startThread = true;//是否啟動執行序
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
 	//數位時鐘練習
+	start = true;
+	if (startThread == false){
+	    return;
+	}
+	startThread = false;
 	Thread th1 = new Thread(()->{	    
 	    while(start){
 		LocalTime time =  LocalTime.now();
@@ -127,6 +138,12 @@ public class Ch13_5 extends javax.swing.JFrame {
 	});
 	th1.start();
 	
+    }                                        
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+	start = false;
+	startThread = true;
     }                                        
 
     /**
