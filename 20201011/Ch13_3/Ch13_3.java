@@ -18,8 +18,15 @@ public class Ch13_3 {
 	      //不會改變原本的localTime
 	      LocalTime newLocalTime = localTime.minusHours(2);
 	      System.out.println(localTime);
-	      System.out.println(newLocalTime);
-	
+	      System.out.println(newLocalTime);	
+	      
+	     LocalTime newLocalTime2 = localTime.plusHours(7);
+	       System.out.println(newLocalTime2);
+	//LocalDateTime 最少要填寫 年月日小時與分鐘
+	       LocalDateTime localDateTime =
+		        LocalDateTime.of(2020, 10, 17, 11, 35);
+	       System.out.println(localDateTime);
+	       
     }
     
 }
