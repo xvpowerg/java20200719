@@ -16,6 +16,7 @@ Calendar calendar = Calendar.getInstance();
 ```
 # LocalDate java7取得年月日
 ```java
+LocalDate localDate = LocalDate.now();
  System.out.println(localDate.toString());
 	  
 	  //目前是這個月的第幾天
