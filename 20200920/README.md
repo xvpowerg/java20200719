@@ -24,3 +24,17 @@ List<Item> list = new ArrayList<>();
 ## 找出 產品金額為 30 50 60 的品名
 * 使用merge 完成此功能
 * 使用 computeIfAbsent 與 computeIfPresent完成此功能
+
+## 目錄
+* [Ch10_1 Map](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_1)
+* [Ch10_2 Map 的merge](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_2)
+* [Ch10_3 Map 的merge](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_3)
+* [Ch10_4 Map 的compute,computeIfAbsent,computeIfPresent方法](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_4)
+* [Ch10_5 Map 應用練習1](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_5)
+* [Ch10_6 Map 應用練習2](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_6)
+* [Ch10_7 Map 測試HashMap的key](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_7)
+* [Ch10_8 Map測試TreeMap](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_8)
+* [Ch10_9 測試TreeMap 自訂類別](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_9)
+* [Ch10_10 泛型generic](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_10)
+* [Ch10_11 限定可設定的泛型類別](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_11)
+* [Ch10_12限定方法參數只能是限定的泛型](https://github.com/xvpowerg/java20200719/tree/master/20200920/Ch10_12)
