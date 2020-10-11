@@ -13,10 +13,12 @@ public class Ch13_6 {
     
     static class Test1{
 	private int x;
-	public void test(){
+	//synchronized  加一把鎖
+	//synchronized 此方法必須等到目前執行此方法的執行序完成,其他執行序才可執行
+	public synchronized void  test(){
 	    for(int i =1;i<=10;i++){
 		x++;
-		System.out.println(x);//6
+		System.out.println(x);
 	    }
 	}
     }
